@@ -1,0 +1,131 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+p {
+    display: inline-block;
+}
+
+/*Start Add*/
+.Note {
+    background-color: #009688; 
+    padding:20px;
+    position: relative;
+}
+
+input {
+    background-color: #4db6ac;
+    border: 1px solid #4db6ac;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 9px;
+    top: 23px;
+    animation: out .4s ease-in-out;
+}
+
+img:hover {
+    cursor: pointer;
+    animation: in .4s ease-in-out;
+}
+
+@keyframes in {
+    0% { transform: rotate(0deg) }
+    
+    100% { transform: rotate(90deg) }
+}
+
+@keyframes out {
+    0% { transform: rotate(90deg) }
+    
+    100% { transform: rotate(0ddeg) }
+}
+/*End Add*/
+
+/*Start Show*/
+.Show1 {
+    background-color: #efefef;
+    padding: 15px;
+}
+
+.hidden { display: none; }
+
+.Show1 div {
+    background-color: white;
+    color: #8e8e8e;
+    padding: 15px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.compeleting,
+.deleting {
+    color: white;
+    position: absolute;
+    left: 1560px;
+    font-family: Arial;
+    padding: 13px 23px;
+    background-color: rgba(255, 0, 88, 0.89);
+    border-radius: 15px;
+}
+
+.compeleting {
+    padding: 13px 23px;
+    left: 1350px;
+}
+
+.compeleting:hover,
+.deleting:hover {
+    cursor: pointer;
+}
+
+.marked {
+    text-decoration: line-through;
+}
+/*End Show*/
+
+/*Start Number*/
+.calculate {
+    background-color: #efefef;
+    padding: 40px;
+    margin-top: 15px;
+}
+
+.calculate .task {margin-right: 1345px}
+
+.calculate .task,
+.calculate .complete{
+    font-family: Arial;
+    font-size: 25px;
+}
+
+.calculate .task span,
+.calculate .complete span {
+    font-family: Arial;
+    font-size: 13px;
+    color: white;
+    margin-left: 4px;
+    padding:3px;
+    border-radius: 5px;
+    font-weight: bolder;
+    position: absolute;
+}
+
+.calculate .task span { 
+    background-color: rgba(255, 0, 88, 0.89);
+}
+
+.calculate .complete span {
+    background-color: #0ec9f5;
+}
+/*End Number*/
